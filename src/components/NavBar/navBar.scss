@@ -1,0 +1,71 @@
+.navBar {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px rgba(110, 107, 107, 0.781);
+    background: #FFE000;
+    background: -webkit-linear-gradient(to right, #f3ef05, #FFE000);
+    background: linear-gradient(to right, #faf600, #FFE000);
+    .img-logo {
+        width: 30%;
+        padding: 5px;
+        img {
+            width: 100px;
+            height: 90px;
+        }
+    }
+    nav {
+        width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        ul {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            li {
+                list-style: none;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                a {
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: #131314f1;
+                    padding: 10px;
+                    border-radius: 5px;
+                    font-family: sans-serif;
+                    width: 80%;
+                    text-align: center;
+                }
+                a:hover {
+                    background: #6441A5;
+                        background: -webkit-linear-gradient(to right, #2a0845, #6441A5);
+                        background: linear-gradient(to right, #2a0845be, #6441a5de);
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .cart {
+        height: auto;
+        width: 50%;
+        a {
+            border-radius: none;
+        }
+        a:hover {
+            background: none;
+            border-radius: none;
+            color: rgb(32, 30, 32);
+        }
+    }
+}

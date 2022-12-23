@@ -1,5 +1,5 @@
 import Cart from "./assets/opencart.svg";
-import "./cartWidget.css";
+import "./cartWidget.scss";
 
 export default function CartWidget() {
   return (
