@@ -1,5 +1,4 @@
 import ButtonSeeMore from '../ButtonSeeMore/ButtonSeeMore';
-import ItemCount from '../ItemCount/ItemCount';
 import './itemList.scss';
 
 export default function itemList() {
@@ -72,7 +71,7 @@ export default function itemList() {
                     </div>
                 </div>
             </div>
-            
+
         </div>
     )
 }
