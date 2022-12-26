@@ -1,8 +1,10 @@
 .buttonSeeMore {
     width: 100%;
+    display: flex;
+    justify-content: center;
 
     button {
-        width: 100%;
+        width: 80%;
         background: #0575E6;
         background: -webkit-linear-gradient(to right, #021B79, #0575E6);
         background: linear-gradient(to right, #021B79, #0575E6);
@@ -16,11 +18,11 @@
         text-shadow: -1px 1px 10px #060606d5;
     }
 
-    button:hover{
+    button:hover {
         cursor: pointer;
         background: #6441A5;
-            background: -webkit-linear-gradient(to right, #2a0845, #6441A5);
-            background: linear-gradient(to right, #2a0845, #6441A5);
-        
+        background: -webkit-linear-gradient(to right, #2a0845, #6441A5);
+        background: linear-gradient(to right, #2a0845, #6441A5);
+
     }
 }

@@ -5,6 +5,7 @@ export default function itemList() {
     return (
 
         <div className="containerCard">
+
             <div className="card">
                 <div className="containerImgText">
 
@@ -22,7 +23,7 @@ export default function itemList() {
                     <div className="description">
                         <h4>Buzo Negro Cripto</h4>
                     </div>
-                    <div className="buttonSeeMore">
+                    <div className="buttonSeeMoreCard">
                         <ButtonSeeMore />
                     </div>
                 </div>
@@ -44,7 +45,7 @@ export default function itemList() {
                     <div className="description">
                         <h4>Remera Blanca Estampada</h4>
                     </div>
-                    <div className="buttonSeeMore">
+                    <div className="buttonSeeMoreCard">
                         <ButtonSeeMore />
                     </div>
                 </div>
@@ -66,7 +67,7 @@ export default function itemList() {
                     <div className="description">
                         <h4>Remera Blanca Estampada</h4>
                     </div>
-                    <div className="buttonSeeMore">
+                    <div className="buttonSeeMoreCard">
                         <ButtonSeeMore />
                     </div>
                 </div>
