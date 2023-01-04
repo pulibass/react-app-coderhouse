@@ -35,7 +35,7 @@ export default function ItemList({id, image, name, value, details}) {
                 </div>
                 <div className="containerDetailsCard">
                     <div className="price">
-                        <h3>{value}</h3>
+                        <h3>${value}</h3>
                     </div>
                     <div className="description">
                         <h4>{details}</h4>
