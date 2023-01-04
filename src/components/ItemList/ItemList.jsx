@@ -1,78 +1,50 @@
 import ButtonSeeMore from '../ButtonSeeMore/ButtonSeeMore';
 import './itemList.scss';
+import React from 'react';
+import { useState } from 'react';
 
-export default function itemList() {
+export default function ItemList({id, image, name, value, details}) {
+
+    
+    const [buttonChange, setButtonChange] = useState("Corazon");
+    const button = () => {
+        if(buttonChange === "Corazon"){
+            setButtonChange('Click')
+        }else{
+            setButtonChange("Corazon");
+        }
+    };
+
+   
+
     return (
 
-        <div className="containerCard">
-
-            <div className="card">
+        <div  className="containerCard">
+            <div key={id} className="card">
+                <div className="corazonContainer">
+                    <button onClick={button} className={buttonChange}>❤</button>
+                </div>
                 <div className="containerImgText">
 
                     <div className="titleCard">
-                        <h2>Buzo</h2>
+                        <h2>{name}</h2>
                     </div>
                     <div className="imgCard">
-                        <img src={"./img/1.png"} alt="Buzo" />
+                        <img src={image} alt={name} />
                     </div>
                 </div>
                 <div className="containerDetailsCard">
                     <div className="price">
-                        <h3>$5000</h3>
+                        <h3>{value}</h3>
                     </div>
                     <div className="description">
-                        <h4>Buzo Negro Cripto</h4>
+                        <h4>{details}</h4>
                     </div>
                     <div className="buttonSeeMoreCard">
                         <ButtonSeeMore />
                     </div>
                 </div>
             </div>
-            <div className="card">
-                <div className="containerImgText">
-
-                    <div className="titleCard">
-                        <h2>Remera Criptos</h2>
-                    </div>
-                    <div className="imgCard">
-                        <img src={"./img/10.png"} alt="Buzo" />
-                    </div>
-                </div>
-                <div className="containerDetailsCard">
-                    <div className="price">
-                        <h3>$3000</h3>
-                    </div>
-                    <div className="description">
-                        <h4>Remera Blanca Estampada</h4>
-                    </div>
-                    <div className="buttonSeeMoreCard">
-                        <ButtonSeeMore />
-                    </div>
-                </div>
-            </div>
-            <div className="card">
-                <div className="containerImgText">
-
-                    <div className="titleCard">
-                        <h2>Remera Santa Cripto</h2>
-                    </div>
-                    <div className="imgCard">
-                        <img src={"./img/9.png"} alt="Buzo" />
-                    </div>
-                </div>
-                <div className="containerDetailsCard">
-                    <div className="price">
-                        <h3>$3500</h3>
-                    </div>
-                    <div className="description">
-                        <h4>Remera Blanca Estampada</h4>
-                    </div>
-                    <div className="buttonSeeMoreCard">
-                        <ButtonSeeMore />
-                    </div>
-                </div>
-            </div>
-
         </div>
     )
 }

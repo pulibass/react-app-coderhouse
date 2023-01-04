@@ -35,7 +35,7 @@ const productos = [
     {
         id: '4',
         image: "../img/4.png",
-        name: "Llavero Bitcoin Dorado",
+        name: "Llavero Bitcoin",
         value: 1000,
         details: "Llavero Bitcoin con cadena",
         features: "Dorado",
@@ -46,7 +46,7 @@ const productos = [
     {
         id: '5',
         image: "../img/5.png",
-        name: "Llavero Bitcoin Plateado",
+        name: "Llavero Bitcoin",
         value: 800,
         details: "Llavero Bitcoin con cadena",
         features: "Plateado",
@@ -90,7 +90,7 @@ const productos = [
     {
         id: '9',
         image: "../img/9.png",
-        name: "Remera Bitcoin Rosario",
+        name: "Remera Rosario",
         value: 3300,
         details: "Remera con Estampado de Rosario",
         talle: "XXL, XL, L, M, S",
@@ -102,7 +102,7 @@ const productos = [
     {
         id: '10',
         image: "../img/10.png",
-        name: "Remera Diseño Criptomonedas",
+        name: "Remera Cripto",
         value: 3500,
         details: "Remera con Estampado de Criptomonedas",
         talle: "XXL, XL, L, M, S",
@@ -126,7 +126,7 @@ const productos = [
     {
         id: '12',
         image: "../img/12.png",
-        name: "Taza Bitcoin StarsBucks",
+        name: "Taza StarsBucks",
         value: 1800,
         details: "Taza Bitcoin StarsBucks tamaño grande",
         features: "Blanco/Verde",
@@ -137,7 +137,7 @@ const productos = [
     {
         id: '13',
         image: "../img/13.png",
-        name: "Taza Yoda Bitcoins",
+        name: "Taza Yoda",
         value: 1600,
         details: "Taza Yoda Bitcoins tamaño grande",
         features: "Negro",
@@ -169,29 +169,12 @@ const productos = [
     }
 ]
 
-export const getProducts = () => {
-    return new Promise((resolve) => {
-        setTimeout(() => {
+function getItems(){
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
             resolve(productos)
-        }, 1500)
+        }, 3000);
     })
 }
 
-export const getProductById = (id) => {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve(productos.find(prod => {
-                return prod.id === id
-            }))
-        }, 500)
-    })
-}
-
-export const getProductsByCategory = (categoryId) => {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve(productos.filter(prod => prod.category === categoryId))
-        }, 500)
-    })
-}
-
+export default getItems;
