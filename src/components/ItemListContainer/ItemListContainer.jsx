@@ -15,10 +15,7 @@ export default function ItemListContainer(props) {
 })
     return (
         <div className="containerList">
-            {products.map(productos => <ItemList
-                key={productos.id}
-                {...productos}
-            />)}
+            <ItemList products={products} {...products} />
         </div>
     )
 }
